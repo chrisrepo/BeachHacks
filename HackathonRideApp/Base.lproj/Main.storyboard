@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -64,8 +64,65 @@
                     <view key="view" contentMode="scaleToFill" id="IXf-Vg-CBd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDL-An-1gf">
+                                <rect key="frame" x="278" y="289" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-H1-iR0">
+                                <rect key="frame" x="329" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-ZH-jYk">
+                                <rect key="frame" x="278" y="318" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtm-CN-m1Q">
+                                <rect key="frame" x="357" y="318" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-md-yPW">
+                                <rect key="frame" x="279" y="347" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="blank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXH-AO-62K">
+                                <rect key="frame" x="357" y="347" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lgQ-ZH-jYk" firstAttribute="leading" secondItem="CDL-An-1gf" secondAttribute="leading" id="29y-df-UoU"/>
+                            <constraint firstItem="Mtm-CN-m1Q" firstAttribute="top" secondItem="lgQ-ZH-jYk" secondAttribute="top" id="DqL-Bn-aEH"/>
+                            <constraint firstItem="lgQ-ZH-jYk" firstAttribute="top" secondItem="CDL-An-1gf" secondAttribute="bottom" constant="8" id="FoS-cQ-uzp"/>
+                            <constraint firstItem="FIB-md-yPW" firstAttribute="leading" secondItem="lgQ-ZH-jYk" secondAttribute="leading" id="OfF-Pe-dh5"/>
+                            <constraint firstItem="AXH-AO-62K" firstAttribute="leading" secondItem="FIB-md-yPW" secondAttribute="trailing" constant="8" id="Qwa-Ci-eCo"/>
+                            <constraint firstItem="hmb-H1-iR0" firstAttribute="leading" secondItem="CDL-An-1gf" secondAttribute="trailing" constant="8" id="V2Z-b8-lrS"/>
+                            <constraint firstItem="AXH-AO-62K" firstAttribute="top" secondItem="FIB-md-yPW" secondAttribute="top" id="be3-BR-eFh"/>
+                            <constraint firstItem="hmb-H1-iR0" firstAttribute="top" secondItem="CDL-An-1gf" secondAttribute="top" id="cgr-Pz-XIF"/>
+                            <constraint firstItem="CDL-An-1gf" firstAttribute="centerY" secondItem="IXf-Vg-CBd" secondAttribute="centerY" id="mOm-ea-jdN"/>
+                            <constraint firstItem="FIB-md-yPW" firstAttribute="top" secondItem="lgQ-ZH-jYk" secondAttribute="bottom" constant="8" id="oEe-7k-MeH"/>
+                            <constraint firstItem="Mtm-CN-m1Q" firstAttribute="leading" secondItem="lgQ-ZH-jYk" secondAttribute="trailing" constant="8" id="s9o-C0-C6n"/>
+                            <constraint firstItem="CDL-An-1gf" firstAttribute="centerX" secondItem="IXf-Vg-CBd" secondAttribute="centerX" id="yS0-Nl-esE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="durationLabel" destination="AXH-AO-62K" id="8lq-Zq-V7o"/>
+                        <outlet property="estimateLabel" destination="Mtm-CN-m1Q" id="ldd-rx-Unr"/>
+                        <outlet property="typeLabel" destination="hmb-H1-iR0" id="GcS-tG-gmS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJ7-XH-pHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

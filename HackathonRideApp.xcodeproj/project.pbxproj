@@ -15,6 +15,9 @@
 		4FFF04EE1CB0AAB8009B5F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF04ED1CB0AAB8009B5F73 /* Assets.xcassets */; };
 		4FFF04F11CB0AAB8009B5F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF04EF1CB0AAB8009B5F73 /* LaunchScreen.storyboard */; };
 		6183226BA701FB6262F6A4F1 /* Pods_HackathonRideApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8B970D4923E6577053C064 /* Pods_HackathonRideApp.framework */; };
+		DB0484711CB0DDD800597A52 /* FetchEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0484701CB0DDD800597A52 /* FetchEstimate.swift */; };
+		DB8866471CB0D92200CECD20 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8866461CB0D92200CECD20 /* NetworkOperation.swift */; };
+		DB88664A1CB0DAE900CECD20 /* PriceEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8866491CB0DAE900CECD20 /* PriceEstimate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		65AD0318BBDC4EBEC55FA492 /* Pods-HackathonRideApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonRideApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonRideApp/Pods-HackathonRideApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9EAC9210499596E90B5A749E /* Pods-HackathonRideApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonRideApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonRideApp/Pods-HackathonRideApp.release.xcconfig"; sourceTree = "<group>"; };
 		BE8B970D4923E6577053C064 /* Pods_HackathonRideApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonRideApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0484701CB0DDD800597A52 /* FetchEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchEstimate.swift; sourceTree = "<group>"; };
+		DB8866461CB0D92200CECD20 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		DB8866491CB0DAE900CECD20 /* PriceEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceEstimate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,8 @@
 		4F87D9B81CB0BFBA00BC89AC /* TestControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4F87D9B91CB0C00600BC89AC /* LyftViewController.swift */,
 				4F87D9BB1CB0C12600BC89AC /* UberViewController.swift */,
+				4F87D9B91CB0C00600BC89AC /* LyftViewController.swift */,
 			);
 			name = TestControllers;
 			sourceTree = "<group>";
@@ -82,6 +88,7 @@
 		4FFF04E51CB0AAB8009B5F73 /* HackathonRideApp */ = {
 			isa = PBXGroup;
 			children = (
+				DB8866481CB0DACD00CECD20 /* Models */,
 				4F87D9B81CB0BFBA00BC89AC /* TestControllers */,
 				4FFF04E61CB0AAB8009B5F73 /* AppDelegate.swift */,
 				4FFF04E81CB0AAB8009B5F73 /* ViewController.swift */,
@@ -100,6 +107,16 @@
 				9EAC9210499596E90B5A749E /* Pods-HackathonRideApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB8866481CB0DACD00CECD20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB8866461CB0D92200CECD20 /* NetworkOperation.swift */,
+				DB8866491CB0DAE900CECD20 /* PriceEstimate.swift */,
+				DB0484701CB0DDD800597A52 /* FetchEstimate.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F87D9BC1CB0C12600BC89AC /* UberViewController.swift in Sources */,
+				DB0484711CB0DDD800597A52 /* FetchEstimate.swift in Sources */,
+				DB88664A1CB0DAE900CECD20 /* PriceEstimate.swift in Sources */,
 				4FFF04E91CB0AAB8009B5F73 /* ViewController.swift in Sources */,
+				DB8866471CB0D92200CECD20 /* NetworkOperation.swift in Sources */,
 				4FFF04E71CB0AAB8009B5F73 /* AppDelegate.swift in Sources */,
 				4F87D9BA1CB0C00600BC89AC /* LyftViewController.swift in Sources */,
 			);
