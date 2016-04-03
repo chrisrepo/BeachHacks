@@ -88,7 +88,13 @@
 		4FFF04E51CB0AAB8009B5F73 /* HackathonRideApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				DB8866481CB0DACD00CECD20 /* Models */,
+=======
+				4F6D7F341CB0E378007B24CC /* Lyft */,
+				4F6D7F331CB0E373007B24CC /* Uber */,
+				4F87D9BD1CB0C52A00BC89AC /* Tools */,
+>>>>>>> bdf3abb5b5f15370d90d480546ab633a53344836
 				4F87D9B81CB0BFBA00BC89AC /* TestControllers */,
 				4FFF04E61CB0AAB8009B5F73 /* AppDelegate.swift */,
 				4FFF04E81CB0AAB8009B5F73 /* ViewController.swift */,
@@ -241,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F87D9C11CB0C73500BC89AC /* LyftHelper.swift in Sources */,
 				4F87D9BC1CB0C12600BC89AC /* UberViewController.swift in Sources */,
 				DB0484711CB0DDD800597A52 /* FetchEstimate.swift in Sources */,
 				DB88664A1CB0DAE900CECD20 /* PriceEstimate.swift in Sources */,
@@ -248,6 +255,7 @@
 				DB8866471CB0D92200CECD20 /* NetworkOperation.swift in Sources */,
 				4FFF04E71CB0AAB8009B5F73 /* AppDelegate.swift in Sources */,
 				4F87D9BA1CB0C00600BC89AC /* LyftViewController.swift in Sources */,
+				4F87D9BF1CB0C54100BC89AC /* LocationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
