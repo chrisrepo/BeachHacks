@@ -1,0 +1,6 @@
+framework module Pods_HackathonRideApp {
+  umbrella header "Pods-HackathonRideApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
