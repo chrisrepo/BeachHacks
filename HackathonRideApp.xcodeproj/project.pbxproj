@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F87D9BA1CB0C00600BC89AC /* LyftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87D9B91CB0C00600BC89AC /* LyftViewController.swift */; };
+		4F87D9BC1CB0C12600BC89AC /* UberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87D9BB1CB0C12600BC89AC /* UberViewController.swift */; };
 		4FFF04E71CB0AAB8009B5F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF04E61CB0AAB8009B5F73 /* AppDelegate.swift */; };
 		4FFF04E91CB0AAB8009B5F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF04E81CB0AAB8009B5F73 /* ViewController.swift */; };
 		4FFF04EC1CB0AAB8009B5F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF04EA1CB0AAB8009B5F73 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F87D9B91CB0C00600BC89AC /* LyftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftViewController.swift; sourceTree = "<group>"; };
+		4F87D9BB1CB0C12600BC89AC /* UberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberViewController.swift; sourceTree = "<group>"; };
 		4FFF04E31CB0AAB8009B5F73 /* HackathonRideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonRideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFF04E61CB0AAB8009B5F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFF04E81CB0AAB8009B5F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F87D9B81CB0BFBA00BC89AC /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F87D9B91CB0C00600BC89AC /* LyftViewController.swift */,
+				4F87D9BB1CB0C12600BC89AC /* UberViewController.swift */,
+			);
+			name = TestControllers;
+			sourceTree = "<group>";
+		};
 		4FFF04DA1CB0AAB8009B5F73 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 		4FFF04E51CB0AAB8009B5F73 /* HackathonRideApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F87D9B81CB0BFBA00BC89AC /* TestControllers */,
 				4FFF04E61CB0AAB8009B5F73 /* AppDelegate.swift */,
 				4FFF04E81CB0AAB8009B5F73 /* ViewController.swift */,
 				4FFF04EA1CB0AAB8009B5F73 /* Main.storyboard */,
@@ -210,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F87D9BC1CB0C12600BC89AC /* UberViewController.swift in Sources */,
 				4FFF04E91CB0AAB8009B5F73 /* ViewController.swift in Sources */,
 				4FFF04E71CB0AAB8009B5F73 /* AppDelegate.swift in Sources */,
+				4F87D9BA1CB0C00600BC89AC /* LyftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
