@@ -76,4 +76,44 @@ class LyftHelper {
         }
         return [["error":"empty"]]///return empty object if no
     }
+    
+    //Returns type, cost estimate, eta, duration of ride, and distance
+    static func getValuesFromArrays(start_address: String, end_address: String)-> (String, String, String, String, STring) {
+        //variables
+        let
+        
+        
+        var estimatesETA = LyftHelper.getTimeEstimate(start_address)
+        if let error = estimatesETA[0]["error"] {
+            //if there's an error message, we figure it out
+            //else, leggoooooo
+        } else {
+            //update labels with estimates
+            let firstETA = estimatesETA[0] as [String: AnyObject]
+            let secVal = firstETA["eta_seconds"] as! Int
+            let minVal = secVal/60
+            if (minVal < 2) {
+                lyftETALabel.text = "1 minute"
+            } else {
+                lyftETALabel.text = "\(minVal) minutes"
+            }
+        }
+        var estimatesCOST = LyftHelper.getCostEstimate(start_address, end_address: end_address)
+        if let error = estimatesCOST[0]["error"] {
+            //if there's an error message, we figure it out
+            //else, leggoooooo
+        } else {
+            //update labels with estimates
+            let firstCost = estimatesCOST[0] as [String: AnyObject]
+            let type = firstCost["ride_type"] as? String
+            
+            
+            let costMax = firstCost["estimated_cost_cents_max"] as! Double
+            let maxDollar = costMax/100
+            let max = Double(round(100*maxDollar)/100)
+            let costMin = firstCost["estimated_cost_cents_min"] as! Double
+            let minDollar = costMin/100
+            let min = Double(round(100*minDollar)/100)
+        }
+    }
 }
